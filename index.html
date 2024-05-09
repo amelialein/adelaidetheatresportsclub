@@ -4,12 +4,17 @@
         <title>ATSC</title>
         <meta name="keywords" content="Adelaide, Theatre Sports">
         <meta name="author" content="Amelia Holds">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
         <script src="./script.js" defer></script>
     </head>
     <body>
+
+        <!-- Fixed header -->
         <header>
-            <img src="./resources/logo.png" alt="ATSC logo">
+            <img id="logo" src="./resources/logo.png" alt="ATSC logo">
 
             <!-- navigaton bar -->
             <nav>
@@ -33,23 +38,17 @@
                 <div id="photocarousel">
                     <div class="slideshow-container">
 
-                        <!-- Full-width images with number and caption text -->
+                        <!-- Full-width images -->
                         <div class="mySlides fade">
-                          <div class="numbertext">1 / 3</div>
                           <img src="./resources/placeholder1.png" style="width:100%">
-                          <div class="text">Caption Text</div>
                         </div>
                       
                         <div class="mySlides fade">
-                          <div class="numbertext">2 / 3</div>
                           <img src="./resources/placeholder1.png" style="width:100%">
-                          <div class="text">Caption Two</div>
                         </div>
                       
                         <div class="mySlides fade">
-                          <div class="numbertext">3 / 3</div>
                           <img src="./resources/placeholder1.png" style="width:100%">
-                          <div class="text">Caption Three</div>
                         </div>
                       
                         <!-- Next and previous buttons -->
@@ -88,6 +87,7 @@
             </section>
         </main>
         
+        <!-- Fixed footer -->
         <footer>
             <p>Copyright Amelia Holds</p>
             <p>Images supplied by: XXX XXX</p>

@@ -1,10 +1,67 @@
-* {box-sizing:border-box}
+* {
+  box-sizing:border-box;
+  font-family: Varela Round;
+}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+body {
+  margin: 0;
+}
+
+/* fixed header */
+header {
+  height: 100px;
+  width: 100%;
+  color: white;
+  background-color: #741e0a;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* logo */
+#logo {
+  height: 100%;
+  display: inline;
+}
+
+/* nav bar */
+nav {
+  display: inline-block;
+  width: 550px;
+  align-self: flex-end;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+/* Grid Creation */
+#home {
+  display: grid;
+  grid-template: 350px 1fr / repeat(4, 25%);
   position: relative;
-  margin: auto;
+  top: 100px;
+  padding-bottom: 40px;
+}
+
+/* photo carousel container */
+#photocarousel {
+  grid-area: 1 / 1 / 2 / span 4;
+}
+.slideshow-container {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin: 0;
 }
 
 /* Hide the images by default */
@@ -18,7 +75,7 @@
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -172px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -39,26 +96,6 @@
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* Fading animation */
 .fade {
     animation-name: fade;
@@ -68,4 +105,73 @@
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+  /* News Section */
+  #news_items {
+    grid-area: 2 / 1 / span 1 / span 3;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+ }
+
+  .news_card {
+    width: 250px;
+    height: 210px;  
+    margin: 0;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+
+  .news_card p,
+  .news_card h4 {
+    padding: 0 10px;
+    margin: 0;
+  }
+
+  /* Next Game */
+  #next_game {
+    grid-area: 2 / 4 / span 1 / span 1;
+    display: inline;
+    color: white;
+    background-color: #741e0a;
+    padding: 10px;
+    align-content: space-evenly;
+  }
+
+  #next_game h2 {
+    font-family: Fredoka;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+  }
+
+  #next_game p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .team_name {
+    font-size: 30px;
+  }
+
+  /* fixed footer */
+  footer {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #741e0a;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  footer p {
+    display: inline;
   }
