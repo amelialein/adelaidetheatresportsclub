@@ -5,25 +5,25 @@
         <meta name="keywords" content="Adelaide, Theatre Sports">
         <meta name="author" content="Amelia Holds">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js" defer></script>
+        
     </head>
     <body>
 
         <!-- Fixed header -->
         <header>
-            <img id="logo" src="./resources/logo.png" alt="ATSC logo">
+            <a><img id="logo" src="./resources/logo.png" alt="ATSC logo"></a>
 
             <!-- navigaton bar -->
             <nav>
                 <ul>
-                    <li>Fixture</li>
-                    <li>Stats</li>
-                    <li>Interviews</li>
-                    <li>Join us</li>
-                    <li>Contact</li>
+                    <li><a class="navButtonFix">Fixture</a></li>
+                    <li><a class="navButtonStats">Stats</a></li>
+                    <li><a class="navButtonInt">Interviews</a></li>
+                    <li><a class="navButtonJoin">Join us</a></li>
+                    <li><a class="navButtonContact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,7 +32,7 @@
         <main id="container">
 
             <!-- home page content -->
-            <section id="home" style="display: none;">
+            <section class="page home" style="display: grid;">
 
                 <!-- photo carousel -->
                 <div id="photocarousel">
@@ -40,15 +40,15 @@
 
                         <!-- Full-width images -->
                         <div class="mySlides fade">
-                          <img src="./resources/placeholder1.png" style="width:100%">
+                          <img src="./resources/green.jpeg" style="width:100%">
                         </div>
                       
                         <div class="mySlides fade">
-                          <img src="./resources/placeholder1.png" style="width:100%">
+                          <img src="./resources/blue.jpeg" style="width:100%">
                         </div>
                       
                         <div class="mySlides fade">
-                          <img src="./resources/placeholder1.png" style="width:100%">
+                          <img src="./resources/orange.jpeg" style="width:100%">
                         </div>
                       
                         <!-- Next and previous buttons -->
@@ -87,7 +87,7 @@
             </section>
 
             <!-- fixture page content -->
-            <section id="fixture" style="display: none;">
+            <section class="page fixture" style="display: none;">
                 <h2>Fixtures 2024</h2>
                 <div class="fixture-container">
                     <h3>A League</h3>
@@ -428,7 +428,7 @@
             </section>
 
             <!-- stats page content -->
-            <section id="stats" style="display: none;">
+            <section class="page stats" style="display: none;">
                 <h2>Our Players</h2>
                 <div class="player">
                     <h3>Player One</h3>
@@ -583,7 +583,7 @@
             </section>
 
             <!-- interviews page content -->
-            <section id="interviews" style="display: none;">
+            <section class="page interviews" style="display: none;">
                 <h2>This Week's Interviews</h2>
                 <div class="interview_card">
                     <h3>Harvey</h3>
@@ -604,7 +604,7 @@
             </section>
 
             <!-- join page content -->
-            <section id="join" style="display: none;">
+            <section class="page join" style="display: none;">
                 <h2>Join a Team!</h2>
                 <div class="league">
                     <h3>A Team</h3>
@@ -647,7 +647,7 @@
             </section>
 
             <!-- contact page content -->
-            <section id="contact">
+            <section class="page contact" style="display: none">
                 <h2>Contact Us</h2>
                 <form method="POST">
                     <label for="firstname">First Name:</label>
@@ -678,5 +678,6 @@
             <p>Copyright Amelia Holds</p>
             <p>Images supplied by: XXX XXX</p>
         </footer>
+        <script src="./script.js"></script>
     </body>
 </html>
